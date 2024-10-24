@@ -11,7 +11,7 @@ namespace POSales
         private string con;
         public string myConnection()
         {
-            con = @"Data Source=DESKTOP-E3LB6O2\SQLEXPRESS;Initial Catalog=DBPOSale;Integrated Security=True;Encrypt=False";
+            con = @"Data Source=DESKTOP-E3LB6O2\SQLEXPRESS;Initial Catalog=DBPOSALE;Integrated Security=True;Encrypt=False";
 
             return con;
         }

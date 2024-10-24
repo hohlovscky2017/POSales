@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Brand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Brand.Designer.cs">
+      <DependentUpon>Brand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrandModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrandModule.Designer.cs">
+      <DependentUpon>BrandModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryModule.Designer.cs">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -55,6 +79,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Brand.resx">
+      <DependentUpon>Brand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrandModule.resx">
+      <DependentUpon>BrandModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryModule.resx">
+      <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,7 +118,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Image\Add.png" />
+    <Content Include="Image\Cancel.png" />
+    <Content Include="Image\Category.png" />
+    <Content Include="Image\Close Window.png" />
+    <Content Include="Image\Edit.png" />
     <Content Include="Image\Name.png" />
+    <Content Include="Image\Smart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
