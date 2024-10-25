@@ -117,6 +117,7 @@ namespace POSales
 
         private void btnSupplier_Click(object sender, EventArgs e)
         {
+            openChildForm(new Supplier());
             HideSubmenu();
         }
 
