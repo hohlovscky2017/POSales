@@ -85,19 +85,16 @@ namespace POSales
         private void btnProductList_Click(object sender, EventArgs e)
         {
             openChildForm(new Product());
-            HideSubmenu();
         }
 
         private void btnCategory_Click(object sender, EventArgs e)
         {
             openChildForm(new Category());
-            HideSubmenu();
         }
 
         private void btnBrand_Click(object sender, EventArgs e)
         {
             openChildForm(new Brand());
-            HideSubmenu();
         }
 
         private void btnInStock_Click(object sender, EventArgs e)
@@ -118,7 +115,6 @@ namespace POSales
         private void btnSupplier_Click(object sender, EventArgs e)
         {
             openChildForm(new Supplier());
-            HideSubmenu();
         }
 
         private void btnRecord_Click(object sender, EventArgs e)
@@ -143,7 +139,7 @@ namespace POSales
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            HideSubmenu();
+            openChildForm(new UserAccount());
         }
 
         private void btnStore_Click(object sender, EventArgs e)

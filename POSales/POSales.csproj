@@ -112,6 +112,12 @@
     <Compile Include="SupplierModule.Designer.cs">
       <DependentUpon>SupplierModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserAccount.Designer.cs">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Brand.resx">
       <DependentUpon>Brand.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="SupplierModule.resx">
       <DependentUpon>SupplierModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserAccount.resx">
+      <DependentUpon>UserAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -174,6 +183,7 @@
     <Content Include="Image\Search.png" />
     <Content Include="Image\Smart.png" />
     <Content Include="Image\Supplier.png" />
+    <Content Include="Image\Users Settings.png" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
