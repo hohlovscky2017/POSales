@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.dgvCash = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +51,7 @@
             this.lblSaleTotal = new System.Windows.Forms.Panel();
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblVatable = new System.Windows.Forms.Label();
-            this.lblTax = new System.Windows.Forms.Label();
+            this.lblVat = new System.Windows.Forms.Label();
             this.lblDiscount = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -85,7 +85,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
             this.lblSaleTotal.SuspendLayout();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
@@ -99,7 +99,7 @@
             // panelMain
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
-            this.panelMain.Controls.Add(this.dgvProduct);
+            this.panelMain.Controls.Add(this.dgvCash);
             this.panelMain.Controls.Add(this.lblSaleTotal);
             this.panelMain.Controls.Add(this.panelTitle);
             this.panelMain.Controls.Add(this.panel2);
@@ -109,22 +109,22 @@
             this.panelMain.Size = new System.Drawing.Size(1200, 700);
             this.panelMain.TabIndex = 5;
             // 
-            // dgvProduct
+            // dgvCash
             // 
-            this.dgvProduct.AllowUserToAddRows = false;
-            this.dgvProduct.BackgroundColor = System.Drawing.Color.White;
-            this.dgvProduct.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvProduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgvProduct.ColumnHeadersHeight = 30;
-            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvProduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCash.AllowUserToAddRows = false;
+            this.dgvCash.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCash.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCash.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCash.ColumnHeadersHeight = 30;
+            this.dgvCash.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvCash.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column8,
             this.Column2,
@@ -136,13 +136,13 @@
             this.colAdd,
             this.colReduce,
             this.Delete});
-            this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProduct.EnableHeadersVisualStyles = false;
-            this.dgvProduct.Location = new System.Drawing.Point(212, 52);
-            this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.RowHeadersVisible = false;
-            this.dgvProduct.Size = new System.Drawing.Size(768, 648);
-            this.dgvProduct.TabIndex = 7;
+            this.dgvCash.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCash.EnableHeadersVisualStyles = false;
+            this.dgvCash.Location = new System.Drawing.Point(212, 52);
+            this.dgvCash.Name = "dgvCash";
+            this.dgvCash.RowHeadersVisible = false;
+            this.dgvCash.Size = new System.Drawing.Size(768, 648);
+            this.dgvCash.TabIndex = 7;
             // 
             // Column1
             // 
@@ -174,8 +174,8 @@
             // Column7
             // 
             this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle7;
             this.Column7.HeaderText = "Price";
             this.Column7.Name = "Column7";
             this.Column7.Width = 69;
@@ -183,8 +183,8 @@
             // Column3
             // 
             this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle8;
             this.Column3.HeaderText = "Qty";
             this.Column3.Name = "Column3";
             this.Column3.Width = 58;
@@ -192,8 +192,8 @@
             // Column9
             // 
             this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle9;
             this.Column9.HeaderText = "Discount";
             this.Column9.Name = "Column9";
             this.Column9.Width = 95;
@@ -201,8 +201,8 @@
             // Column5
             // 
             this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle10;
             this.Column5.HeaderText = "Total";
             this.Column5.Name = "Column5";
             this.Column5.Width = 65;
@@ -235,7 +235,7 @@
             // 
             this.lblSaleTotal.Controls.Add(this.lblTimer);
             this.lblSaleTotal.Controls.Add(this.lblVatable);
-            this.lblSaleTotal.Controls.Add(this.lblTax);
+            this.lblSaleTotal.Controls.Add(this.lblVat);
             this.lblSaleTotal.Controls.Add(this.lblDiscount);
             this.lblSaleTotal.Controls.Add(this.label11);
             this.lblSaleTotal.Controls.Add(this.label10);
@@ -277,14 +277,14 @@
             this.lblVatable.Text = "0,00";
             this.lblVatable.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // lblTax
+            // lblVat
             // 
-            this.lblTax.Location = new System.Drawing.Point(102, 389);
-            this.lblTax.Name = "lblTax";
-            this.lblTax.Size = new System.Drawing.Size(115, 20);
-            this.lblTax.TabIndex = 12;
-            this.lblTax.Text = "0,00";
-            this.lblTax.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblVat.Location = new System.Drawing.Point(102, 389);
+            this.lblVat.Name = "lblVat";
+            this.lblVat.Size = new System.Drawing.Size(115, 20);
+            this.lblVat.TabIndex = 12;
+            this.lblVat.Text = "0,00";
+            this.lblVat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblDiscount
             // 
@@ -309,18 +309,18 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(6, 422);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(76, 20);
+            this.label10.Size = new System.Drawing.Size(77, 20);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Vatable :";
+            this.label10.Text = "VATable :";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 389);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(39, 20);
+            this.label9.Size = new System.Drawing.Size(44, 20);
             this.label9.TabIndex = 8;
-            this.label9.Text = "Tax :";
+            this.label9.Text = "VAT :";
             // 
             // label8
             // 
@@ -679,7 +679,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";
             this.panelMain.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).EndInit();
             this.lblSaleTotal.ResumeLayout(false);
             this.lblSaleTotal.PerformLayout();
             this.panelTitle.ResumeLayout(false);
@@ -708,7 +708,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnNTran;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelSlide;
         private System.Windows.Forms.Panel panelTitle;
@@ -716,7 +715,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Panel lblSaleTotal;
-        private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.DataGridView dgvCash;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -729,7 +728,6 @@
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Label lblDisplayTotal;
-        private System.Windows.Forms.Label lblTranNo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label6;
@@ -743,7 +741,9 @@
         private System.Windows.Forms.Label lblDiscount;
         private System.Windows.Forms.Label lblTimer;
         private System.Windows.Forms.Label lblVatable;
-        private System.Windows.Forms.Label lblTax;
+        private System.Windows.Forms.Label lblVat;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label lblUsername;
+        public System.Windows.Forms.Label lblTranNo;
     }
 }

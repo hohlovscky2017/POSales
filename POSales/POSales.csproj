@@ -86,6 +86,12 @@
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="LookUpProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookUpProduct.Designer.cs">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Qty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Qty.Designer.cs">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,9 @@
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LookUpProduct.resx">
+      <DependentUpon>LookUpProduct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -157,6 +172,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Qty.resx">
+      <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +202,7 @@
   <ItemGroup>
     <Content Include="Image\Add New.png" />
     <Content Include="Image\Add.png" />
+    <Content Include="Image\Buy.png" />
     <Content Include="Image\Calculator.png" />
     <Content Include="Image\Cancel.png" />
     <Content Include="Image\Category.png" />
@@ -197,6 +216,7 @@
     <Content Include="Image\Product Management.png" />
     <Content Include="Image\Reduce.png" />
     <Content Include="Image\Remove.png" />
+    <Content Include="Image\Search in List.png" />
     <Content Include="Image\Search.png" />
     <Content Include="Image\Search2.png" />
     <Content Include="Image\Smart.png" />
