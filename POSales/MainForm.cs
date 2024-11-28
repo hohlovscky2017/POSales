@@ -104,7 +104,7 @@ namespace POSales
 
         private void btnStockEntry_Click(object sender, EventArgs e)
         {
-            HideSubmenu();
+            openChildForm(new StockIn());
         }
 
         private void btnStockAdjastment_Click(object sender, EventArgs e)

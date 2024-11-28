@@ -159,5 +159,10 @@ namespace POSales
             }
             
         }
+
+        private void txtBarcode_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

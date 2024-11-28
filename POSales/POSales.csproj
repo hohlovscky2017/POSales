@@ -110,6 +110,12 @@
     <Compile Include="ProductModule.Designer.cs">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProductStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductStockIn.Designer.cs">
+      <DependentUpon>ProductStockIn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Qty.cs">
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="Qty.Designer.cs">
       <DependentUpon>Qty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockIn.Designer.cs">
+      <DependentUpon>StockIn.cs</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
@@ -163,6 +175,9 @@
     <EmbeddedResource Include="ProductModule.resx">
       <DependentUpon>ProductModule.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductStockIn.resx">
+      <DependentUpon>ProductStockIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -174,6 +189,9 @@
     </Compile>
     <EmbeddedResource Include="Qty.resx">
       <DependentUpon>Qty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn.resx">
+      <DependentUpon>StockIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
@@ -203,6 +221,7 @@
     <Content Include="Image\Add New.png" />
     <Content Include="Image\Add.png" />
     <Content Include="Image\Buy.png" />
+    <Content Include="Image\Buying.png" />
     <Content Include="Image\Calculator.png" />
     <Content Include="Image\Cancel.png" />
     <Content Include="Image\Category.png" />
@@ -219,11 +238,13 @@
     <Content Include="Image\Search in List.png" />
     <Content Include="Image\Search.png" />
     <Content Include="Image\Search2.png" />
+    <Content Include="Image\select_yes_20px.png" />
     <Content Include="Image\Smart.png" />
     <Content Include="Image\Supplier.png" />
     <Content Include="Image\Ticket Purchase.png" />
     <Content Include="Image\Total Sales.png" />
     <Content Include="Image\Transaction.png" />
+    <Content Include="Image\Trolley.png" />
     <Content Include="Image\User.png" />
     <Content Include="Image\Users Settings.png" />
     <Content Include="MetroFramework.txt" />
