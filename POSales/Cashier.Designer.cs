@@ -84,6 +84,7 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtQty = new System.Windows.Forms.TextBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
             this.lblSaleTotal.SuspendLayout();
@@ -143,6 +144,7 @@
             this.dgvCash.RowHeadersVisible = false;
             this.dgvCash.Size = new System.Drawing.Size(768, 648);
             this.dgvCash.TabIndex = 7;
+            this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
             // 
             // Column1
             // 
@@ -233,6 +235,7 @@
             // 
             // lblSaleTotal
             // 
+            this.lblSaleTotal.Controls.Add(this.txtQty);
             this.lblSaleTotal.Controls.Add(this.lblTimer);
             this.lblSaleTotal.Controls.Add(this.lblVatable);
             this.lblSaleTotal.Controls.Add(this.lblVat);
@@ -666,6 +669,15 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // txtQty
+            // 
+            this.txtQty.Location = new System.Drawing.Point(170, 243);
+            this.txtQty.Name = "txtQty";
+            this.txtQty.Size = new System.Drawing.Size(40, 26);
+            this.txtQty.TabIndex = 15;
+            this.txtQty.Text = "1";
+            this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -730,7 +742,6 @@
         private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Label lblDisplayTotal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtBarcode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label5;
@@ -746,5 +757,7 @@
         private System.Windows.Forms.Timer timer1;
         public System.Windows.Forms.Label lblUsername;
         public System.Windows.Forms.Label lblTranNo;
+        private System.Windows.Forms.TextBox txtQty;
+        public System.Windows.Forms.TextBox txtBarcode;
     }
 }
