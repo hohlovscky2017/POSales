@@ -37,17 +37,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cashier));
             this.panelMain = new System.Windows.Forms.Panel();
             this.dgvCash = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAdd = new System.Windows.Forms.DataGridViewImageColumn();
-            this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel = new System.Windows.Forms.Panel();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.lblTimer = new System.Windows.Forms.Label();
@@ -85,6 +74,17 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAdd = new System.Windows.Forms.DataGridViewImageColumn();
+            this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
             this.panel.SuspendLayout();
@@ -146,93 +146,6 @@
             this.dgvCash.TabIndex = 7;
             this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column1.HeaderText = "No";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 53;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column8.HeaderText = "Id";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 47;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Column2.HeaderText = "Pcode";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 81;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column4.HeaderText = "Description";
-            this.Column4.Name = "Column4";
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column7.HeaderText = "Price";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 69;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column3.HeaderText = "Qty";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 58;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column9.HeaderText = "Discount";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 95;
-            // 
-            // Column5
-            // 
-            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Column5.HeaderText = "Total";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 65;
-            // 
-            // colAdd
-            // 
-            this.colAdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colAdd.HeaderText = "";
-            this.colAdd.Image = ((System.Drawing.Image)(resources.GetObject("colAdd.Image")));
-            this.colAdd.Name = "colAdd";
-            this.colAdd.Width = 5;
-            // 
-            // colReduce
-            // 
-            this.colReduce.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colReduce.HeaderText = "";
-            this.colReduce.Image = ((System.Drawing.Image)(resources.GetObject("colReduce.Image")));
-            this.colReduce.Name = "colReduce";
-            this.colReduce.Width = 5;
-            // 
-            // Delete
-            // 
-            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Delete.HeaderText = "";
-            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
-            this.Delete.Name = "Delete";
-            this.Delete.Width = 5;
             // 
             // panel
             // 
@@ -682,6 +595,94 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column1.HeaderText = "No";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 53;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column8.HeaderText = "Id";
+            this.Column8.Name = "Column8";
+            this.Column8.Visible = false;
+            this.Column8.Width = 47;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Column2.HeaderText = "Pcode";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 81;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.HeaderText = "Description";
+            this.Column4.Name = "Column4";
+            // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Column7.HeaderText = "Price";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 69;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column3.HeaderText = "Qty";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 58;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column9.HeaderText = "Discount";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 95;
+            // 
+            // Column5
+            // 
+            this.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Column5.HeaderText = "Total";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 65;
+            // 
+            // colAdd
+            // 
+            this.colAdd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colAdd.HeaderText = "";
+            this.colAdd.Image = ((System.Drawing.Image)(resources.GetObject("colAdd.Image")));
+            this.colAdd.Name = "colAdd";
+            this.colAdd.Width = 5;
+            // 
+            // colReduce
+            // 
+            this.colReduce.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.colReduce.HeaderText = "";
+            this.colReduce.Image = ((System.Drawing.Image)(resources.GetObject("colReduce.Image")));
+            this.colReduce.Name = "colReduce";
+            this.colReduce.Width = 5;
+            // 
+            // Delete
+            // 
+            this.Delete.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Delete.HeaderText = "";
+            this.Delete.Image = ((System.Drawing.Image)(resources.GetObject("Delete.Image")));
+            this.Delete.Name = "Delete";
+            this.Delete.Width = 5;
+            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -731,17 +732,6 @@
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewImageColumn colAdd;
-        private System.Windows.Forms.DataGridViewImageColumn colReduce;
-        private System.Windows.Forms.DataGridViewImageColumn Delete;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDate;
@@ -763,5 +753,16 @@
         public System.Windows.Forms.DataGridView dgvCash;
         public System.Windows.Forms.Label lblDisplayTotal;
         public System.Windows.Forms.Label lblname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewImageColumn colAdd;
+        private System.Windows.Forms.DataGridViewImageColumn colReduce;
+        private System.Windows.Forms.DataGridViewImageColumn Delete;
     }
 }

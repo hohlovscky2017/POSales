@@ -93,6 +93,8 @@ namespace POSales
         private void btnDSales_Click(object sender, EventArgs e)
         {
             slide(btnDSales);
+            DailySales dailySales = new DailySales();
+            dailySales.ShowDialog();
         }
 
         private void btnPass_Click(object sender, EventArgs e)
@@ -103,6 +105,11 @@ namespace POSales
         private void btnLogout_Click(object sender, EventArgs e)
         {
             slide(btnLogout);
+            if(dgvCash.Rows.Count > 0)
+            {
+                MessageBox.Show("Unable to logout. Please cancel the transaction.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 this.Hide();

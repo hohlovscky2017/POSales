@@ -85,6 +85,12 @@
     <Compile Include="CategoryModule.Designer.cs">
       <DependentUpon>CategoryModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="DailySales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySales.Designer.cs">
+      <DependentUpon>DailySales.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
     <Compile Include="Discount.cs">
       <SubType>Form</SubType>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CategoryModule.resx">
       <DependentUpon>CategoryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailySales.resx">
+      <DependentUpon>DailySales.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
