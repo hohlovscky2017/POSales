@@ -103,6 +103,12 @@ namespace POSales
         private void btnLogout_Click(object sender, EventArgs e)
         {
             slide(btnLogout);
+            if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
         }
         #endregion button
 
@@ -129,7 +135,7 @@ namespace POSales
                 }
                 dr.Close();
                 cn.Close();
-                lblSaleTotal.Text = total.ToString("#,##0.00");
+                panel.Text = total.ToString("#,##0.00");
                 lblDiscount.Text = discount.ToString("#,##0.00");
                 GetCartTotal();
                 if(hascart) { btnClear.Enabled = true; btnSettle.Enabled = true; btnDiscount.Enabled = true; }
@@ -145,13 +151,14 @@ namespace POSales
         public void GetCartTotal()
         {
             double discount = double.Parse(lblDiscount.Text);
-            double sales = double.Parse(lblSaleTotal.Text) - discount;
+            double sales = double.Parse(panel.Text) - discount;
             double vat = sales * 0.12;
             double vatable = sales - vat;
             
             lblVat.Text = vat.ToString("#,##0.00");
             lblVatable.Text = vatable.ToString("#,##0.00");
             lblDisplayTotal.Text = sales.ToString("#,##0.00");
+            lblSaleTotal.Text = (sales + discount).ToString("#,##0.00");
         }
 
         private void timer1_Tick(object sender, EventArgs e)

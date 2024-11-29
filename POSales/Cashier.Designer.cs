@@ -48,13 +48,13 @@
             this.colAdd = new System.Windows.Forms.DataGridViewImageColumn();
             this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
-            this.lblSaleTotal = new System.Windows.Forms.Panel();
+            this.panel = new System.Windows.Forms.Panel();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblVatable = new System.Windows.Forms.Label();
             this.lblVat = new System.Windows.Forms.Label();
             this.lblDiscount = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblSaleTotal = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -87,7 +87,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
-            this.lblSaleTotal.SuspendLayout();
+            this.panel.SuspendLayout();
             this.panelTitle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -101,7 +101,7 @@
             // 
             this.panelMain.BackColor = System.Drawing.Color.White;
             this.panelMain.Controls.Add(this.dgvCash);
-            this.panelMain.Controls.Add(this.lblSaleTotal);
+            this.panelMain.Controls.Add(this.panel);
             this.panelMain.Controls.Add(this.panelTitle);
             this.panelMain.Controls.Add(this.panel2);
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -234,30 +234,30 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
-            // lblSaleTotal
+            // panel
             // 
-            this.lblSaleTotal.Controls.Add(this.txtQty);
-            this.lblSaleTotal.Controls.Add(this.lblTimer);
-            this.lblSaleTotal.Controls.Add(this.lblVatable);
-            this.lblSaleTotal.Controls.Add(this.lblVat);
-            this.lblSaleTotal.Controls.Add(this.lblDiscount);
-            this.lblSaleTotal.Controls.Add(this.label11);
-            this.lblSaleTotal.Controls.Add(this.label10);
-            this.lblSaleTotal.Controls.Add(this.label9);
-            this.lblSaleTotal.Controls.Add(this.label8);
-            this.lblSaleTotal.Controls.Add(this.label7);
-            this.lblSaleTotal.Controls.Add(this.txtBarcode);
-            this.lblSaleTotal.Controls.Add(this.label6);
-            this.lblSaleTotal.Controls.Add(this.lblDate);
-            this.lblSaleTotal.Controls.Add(this.label5);
-            this.lblSaleTotal.Controls.Add(this.lblTranNo);
-            this.lblSaleTotal.Controls.Add(this.label2);
-            this.lblSaleTotal.Controls.Add(this.lblDisplayTotal);
-            this.lblSaleTotal.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblSaleTotal.Location = new System.Drawing.Point(980, 52);
-            this.lblSaleTotal.Name = "lblSaleTotal";
-            this.lblSaleTotal.Size = new System.Drawing.Size(220, 648);
-            this.lblSaleTotal.TabIndex = 6;
+            this.panel.Controls.Add(this.txtQty);
+            this.panel.Controls.Add(this.lblTimer);
+            this.panel.Controls.Add(this.lblVatable);
+            this.panel.Controls.Add(this.lblVat);
+            this.panel.Controls.Add(this.lblDiscount);
+            this.panel.Controls.Add(this.lblSaleTotal);
+            this.panel.Controls.Add(this.label10);
+            this.panel.Controls.Add(this.label9);
+            this.panel.Controls.Add(this.label8);
+            this.panel.Controls.Add(this.label7);
+            this.panel.Controls.Add(this.txtBarcode);
+            this.panel.Controls.Add(this.label6);
+            this.panel.Controls.Add(this.lblDate);
+            this.panel.Controls.Add(this.label5);
+            this.panel.Controls.Add(this.lblTranNo);
+            this.panel.Controls.Add(this.label2);
+            this.panel.Controls.Add(this.lblDisplayTotal);
+            this.panel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel.Location = new System.Drawing.Point(980, 52);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(220, 648);
+            this.panel.TabIndex = 6;
             // 
             // txtQty
             // 
@@ -308,14 +308,14 @@
             this.lblDiscount.Text = "0,00";
             this.lblDiscount.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label11
+            // lblSaleTotal
             // 
-            this.label11.Location = new System.Drawing.Point(102, 323);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(115, 20);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "0,00";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lblSaleTotal.Location = new System.Drawing.Point(102, 323);
+            this.lblSaleTotal.Name = "lblSaleTotal";
+            this.lblSaleTotal.Size = new System.Drawing.Size(115, 20);
+            this.lblSaleTotal.TabIndex = 10;
+            this.lblSaleTotal.Text = "0,00";
+            this.lblSaleTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label10
             // 
@@ -697,8 +697,8 @@
             this.Text = "Cashier";
             this.panelMain.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).EndInit();
-            this.lblSaleTotal.ResumeLayout(false);
-            this.lblSaleTotal.PerformLayout();
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelTitle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
@@ -730,8 +730,7 @@
         private System.Windows.Forms.Panel panelTitle;
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Panel lblSaleTotal;
+        private System.Windows.Forms.Panel panel;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -747,7 +746,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblSaleTotal;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -763,5 +762,6 @@
         public System.Windows.Forms.TextBox txtBarcode;
         public System.Windows.Forms.DataGridView dgvCash;
         public System.Windows.Forms.Label lblDisplayTotal;
+        public System.Windows.Forms.Label lblname;
     }
 }

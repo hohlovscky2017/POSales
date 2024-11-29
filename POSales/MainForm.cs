@@ -149,7 +149,12 @@ namespace POSales
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            HideSubmenu();
+            if (MessageBox.Show("Logout Application?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login login = new Login();
+                login.ShowDialog();
+            }
         }
     }
 }

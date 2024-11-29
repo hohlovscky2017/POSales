@@ -92,6 +92,12 @@
     <Compile Include="Discount.Designer.cs">
       <DependentUpon>Discount.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="LookUpProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     <EmbeddedResource Include="Discount.resx">
       <DependentUpon>Discount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LookUpProduct.resx">
       <DependentUpon>LookUpProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -246,8 +255,12 @@
     <Content Include="Image\Clear Shopping Cart.png" />
     <Content Include="Image\Close Window.png" />
     <Content Include="Image\Edit.png" />
+    <Content Include="Image\key_20px.png" />
     <Content Include="Image\Logout.png" />
     <Content Include="Image\Low Price.png" />
+    <Content Include="Image\market_100px.png" />
+    <Content Include="Image\market_30px.png" />
+    <Content Include="Image\market_50px.png" />
     <Content Include="Image\Name.png" />
     <Content Include="Image\Password Reset.png" />
     <Content Include="Image\Product Management.png" />
@@ -265,6 +278,7 @@
     <Content Include="Image\Trolley.png" />
     <Content Include="Image\User.png" />
     <Content Include="Image\Users Settings.png" />
+    <Content Include="Image\user_20px.png" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
