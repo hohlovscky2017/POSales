@@ -49,6 +49,7 @@
             this.colReduce = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
             this.lblSaleTotal = new System.Windows.Forms.Panel();
+            this.txtQty = new System.Windows.Forms.TextBox();
             this.lblTimer = new System.Windows.Forms.Label();
             this.lblVatable = new System.Windows.Forms.Label();
             this.lblVat = new System.Windows.Forms.Label();
@@ -84,7 +85,6 @@
             this.lblUsername = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.txtQty = new System.Windows.Forms.TextBox();
             this.panelMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCash)).BeginInit();
             this.lblSaleTotal.SuspendLayout();
@@ -144,6 +144,7 @@
             this.dgvCash.RowHeadersVisible = false;
             this.dgvCash.Size = new System.Drawing.Size(768, 648);
             this.dgvCash.TabIndex = 7;
+            this.dgvCash.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCash_CellContentClick);
             this.dgvCash.SelectionChanged += new System.EventHandler(this.dgvCash_SelectionChanged);
             // 
             // Column1
@@ -257,6 +258,15 @@
             this.lblSaleTotal.Name = "lblSaleTotal";
             this.lblSaleTotal.Size = new System.Drawing.Size(220, 648);
             this.lblSaleTotal.TabIndex = 6;
+            // 
+            // txtQty
+            // 
+            this.txtQty.Location = new System.Drawing.Point(170, 243);
+            this.txtQty.Name = "txtQty";
+            this.txtQty.Size = new System.Drawing.Size(40, 26);
+            this.txtQty.TabIndex = 15;
+            this.txtQty.Text = "1";
+            this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lblTimer
             // 
@@ -548,6 +558,7 @@
             // btnClear
             // 
             this.btnClear.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnClear.Enabled = false;
             this.btnClear.FlatAppearance.BorderSize = 0;
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
@@ -566,6 +577,7 @@
             // btnSettle
             // 
             this.btnSettle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettle.Enabled = false;
             this.btnSettle.FlatAppearance.BorderSize = 0;
             this.btnSettle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettle.ForeColor = System.Drawing.Color.White;
@@ -584,6 +596,7 @@
             // btnDiscount
             // 
             this.btnDiscount.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDiscount.Enabled = false;
             this.btnDiscount.FlatAppearance.BorderSize = 0;
             this.btnDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiscount.ForeColor = System.Drawing.Color.White;
@@ -669,15 +682,6 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // txtQty
-            // 
-            this.txtQty.Location = new System.Drawing.Point(170, 243);
-            this.txtQty.Name = "txtQty";
-            this.txtQty.Size = new System.Drawing.Size(40, 26);
-            this.txtQty.TabIndex = 15;
-            this.txtQty.Text = "1";
-            this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Cashier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -728,7 +732,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Panel lblSaleTotal;
-        private System.Windows.Forms.DataGridView dgvCash;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
@@ -740,7 +743,6 @@
         private System.Windows.Forms.DataGridViewImageColumn colAdd;
         private System.Windows.Forms.DataGridViewImageColumn colReduce;
         private System.Windows.Forms.DataGridViewImageColumn Delete;
-        private System.Windows.Forms.Label lblDisplayTotal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblDate;
@@ -759,5 +761,7 @@
         public System.Windows.Forms.Label lblTranNo;
         private System.Windows.Forms.TextBox txtQty;
         public System.Windows.Forms.TextBox txtBarcode;
+        public System.Windows.Forms.DataGridView dgvCash;
+        public System.Windows.Forms.Label lblDisplayTotal;
     }
 }

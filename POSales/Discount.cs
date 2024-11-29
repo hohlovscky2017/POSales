@@ -24,6 +24,7 @@ namespace POSales
             cn = new SqlConnection(dbcon.myConnection());
             cashier = cash;
             txtDiscount.Focus();
+            this.KeyPreview = true;
         }
 
         private void picClose_Click(object sender, EventArgs e)
@@ -33,10 +34,8 @@ namespace POSales
 
         private void Discount_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Escape)
-            {
-                this.Dispose();
-            }
+            if (e.KeyCode == Keys.Escape) this.Dispose();
+            else if (e.KeyCode == Keys.Enter) btnSave.PerformClick();
         }
 
         private void txtDiscount_TextChanged(object sender, EventArgs e)
@@ -48,7 +47,7 @@ namespace POSales
             }
             catch (Exception)
             {
-                txtDiscAmount.Text = "0.00";
+                txtDiscAmount.Text = "0,00";
             }
         }
 
