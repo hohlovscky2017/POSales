@@ -166,6 +166,12 @@
     <Compile Include="StockIn.Designer.cs">
       <DependentUpon>StockIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +259,9 @@
     <EmbeddedResource Include="StockIn.resx">
       <DependentUpon>StockIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supplier.resx">
       <DependentUpon>Supplier.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +316,7 @@
     <Content Include="Image\Search2.png" />
     <Content Include="Image\select_yes_20px.png" />
     <Content Include="Image\Smart.png" />
+    <Content Include="Image\store_sign_30px.png" />
     <Content Include="Image\Supplier.png" />
     <Content Include="Image\Ticket Purchase.png" />
     <Content Include="Image\Total Sales.png" />

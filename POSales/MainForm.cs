@@ -145,6 +145,8 @@ namespace POSales
         private void btnStore_Click(object sender, EventArgs e)
         {
             HideSubmenu();
+            Store store = new Store();
+            store.ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
