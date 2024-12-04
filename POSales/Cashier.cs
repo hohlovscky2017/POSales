@@ -94,6 +94,7 @@ namespace POSales
         {
             slide(btnDSales);
             DailySales dailySales = new DailySales();
+            dailySales.solduser = lblUsername.Text;
             dailySales.ShowDialog();
         }
 
