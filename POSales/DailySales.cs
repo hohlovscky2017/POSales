@@ -64,6 +64,7 @@ namespace POSales
             {
                 i++;
                 dgvSold.Rows.Add(i, dr["id"].ToString(), dr["transno"].ToString(), dr["pcode"].ToString(), dr["pdesc"].ToString(), dr["price"].ToString(), dr["qty"].ToString(), dr["disc"].ToString(), dr["total"].ToString());
+                total += double.Parse(dr["total"].ToString());
             }
             dr.Close();
             cn.Close();

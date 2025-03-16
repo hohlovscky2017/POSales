@@ -16,6 +16,7 @@ namespace POSales
         SqlConnection cn = new SqlConnection();
         SqlCommand cm = new SqlCommand();
         DBConnect dbcon = new DBConnect();
+        public string _pass;
         public MainForm()
         {
             InitializeComponent();
@@ -139,7 +140,7 @@ namespace POSales
 
         private void btnUser_Click(object sender, EventArgs e)
         {
-            openChildForm(new UserAccount());
+            openChildForm(new UserAccount(this));
         }
 
         private void btnStore_Click(object sender, EventArgs e)

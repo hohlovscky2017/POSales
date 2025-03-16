@@ -20,7 +20,7 @@ namespace POSales
         SqlDataReader dr;
 
         public string _pass = "";
-        public bool _isactive;
+        public bool _isactivate;
         public Login()
         {
             InitializeComponent();
@@ -55,7 +55,7 @@ namespace POSales
                     _name = dr["name"].ToString();
                     _role = dr["role"].ToString();
                     _pass = dr["password"].ToString();
-                    _isactive = bool.Parse(dr["isactive"].ToString());
+                    _isactivate = bool.Parse(dr["isactivate"].ToString());
                 }
                 else
                 {
@@ -66,9 +66,9 @@ namespace POSales
 
                 if (found)
                 {
-                    if (!_isactive)
+                    if (!_isactivate)
                     {
-                        MessageBox.Show("Account is inactive. Unable to login", "Inactive Account", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Account is deactivate. Unable to login", "Inactive Account", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     if(_role == "Cashier")
@@ -91,6 +91,7 @@ namespace POSales
                         MainForm main = new MainForm();
                         main.lblUsername.Text = _username;
                         main.lblName.Text = _name;
+                        main._pass = _pass;
                         main.ShowDialog();
                     }
                 }
