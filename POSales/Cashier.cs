@@ -95,6 +95,10 @@ namespace POSales
             slide(btnDSales);
             DailySales dailySales = new DailySales();
             dailySales.solduser = lblUsername.Text;
+            dailySales.dtFrom.Enabled = false;
+            dailySales.dtTo.Enabled = false;
+            dailySales.cboCashier.Enabled = false;
+            dailySales.cboCashier.Text = lblUsername.Text;
             dailySales.ShowDialog();
         }
 

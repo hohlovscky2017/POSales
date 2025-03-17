@@ -151,6 +151,12 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="POSReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POSReport.Designer.cs">
+      <DependentUpon>POSReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,9 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="POSReport.resx">
+      <DependentUpon>POSReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +296,7 @@
       <DependentUpon>Recept.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rptRecept.rdlc" />
+    <EmbeddedResource Include="rptSoldReport.rdlc" />
     <EmbeddedResource Include="UserProperties.resx">
       <DependentUpon>UserProperties.cs</DependentUpon>
     </EmbeddedResource>
@@ -371,6 +381,7 @@
     <Content Include="Image\market_50px.png" />
     <Content Include="Image\Name.png" />
     <Content Include="Image\Password Reset.png" />
+    <Content Include="Image\print_30px.png" />
     <Content Include="Image\Product Management.png" />
     <Content Include="Image\Reduce.png" />
     <Content Include="Image\Remove.png" />

@@ -54,6 +54,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.cboCashier = new System.Windows.Forms.ComboBox();
+            this.btnPrint = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSold)).BeginInit();
@@ -262,12 +263,25 @@
             this.cboCashier.Text = "Select Cashier";
             this.cboCashier.SelectedIndexChanged += new System.EventHandler(this.cboCashier_SelectedIndexChanged);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.Image = ((System.Drawing.Image)(resources.GetObject("btnPrint.Image")));
+            this.btnPrint.Location = new System.Drawing.Point(664, 491);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(35, 35);
+            this.btnPrint.TabIndex = 16;
+            this.btnPrint.UseVisualStyleBackColor = true;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
             // DailySales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1010, 548);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.cboCashier);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.label3);
@@ -309,11 +323,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewImageColumn Cancel;
-        private System.Windows.Forms.DateTimePicker dtFrom;
-        private System.Windows.Forms.DateTimePicker dtTo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.ComboBox cboCashier;
+        private System.Windows.Forms.Button btnPrint;
+        public System.Windows.Forms.DateTimePicker dtFrom;
+        public System.Windows.Forms.DateTimePicker dtTo;
+        public System.Windows.Forms.ComboBox cboCashier;
     }
 }

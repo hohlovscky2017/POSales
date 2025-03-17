@@ -125,7 +125,8 @@ namespace POSales
 
         private void btnSaleHistory_Click(object sender, EventArgs e)
         {
-            HideSubmenu();
+            DailySales dailySales = new DailySales();
+            dailySales.ShowDialog();
         }
 
         private void btnPosRecord_Click(object sender, EventArgs e)

@@ -113,5 +113,21 @@ namespace POSales
 
             }
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            POSReport report = new POSReport();
+            string param = "Date From: " + dtFrom.Value.ToShortDateString() + " To: " + dtTo.Value.ToShortDateString();
+
+            if (cboCashier.Text == "All Cashier")
+            {
+                report.LoadDailyReport("SELECT c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode = p.pcode WHERE status LIKE 'Sold' AND sdate BETWEEN '" + dtFrom.Value + "' AND '" + dtTo.Value + "'", param, cboCashier.Text);
+            }
+            else
+            {
+                report.LoadDailyReport("SELECT c.id, c.transno, c.pcode, p.pdesc, c.price, c.qty, c.disc as discount, c.total FROM tbCart AS c INNER JOIN tbProduct AS p ON c.pcode = p.pcode WHERE status LIKE 'Sold' AND sdate BETWEEN '" + dtFrom.Value + "' AND '" + dtTo.Value + "' AND cashier LIKE '" + cboCashier.Text + "'", param, cboCashier.Text);
+            }
+            report.ShowDialog();
+        }
     }
 }
