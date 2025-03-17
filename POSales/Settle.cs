@@ -111,6 +111,10 @@ namespace POSales
                         cn.Close();
                     }
 
+                    Recept recept = new Recept(cashier);
+                    recept.LoadRecept(txtCash.Text, txtChange.Text);
+                    recept.ShowDialog();
+
                     MessageBox.Show("Payment successfully saved!", "Payment", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cashier.GetTranNo();
                     cashier.LoadCart();
